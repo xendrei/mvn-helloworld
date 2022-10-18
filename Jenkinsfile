@@ -9,7 +9,6 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh "cd mvn-helloworld"
                 sh "mvn package"
             }
         }
