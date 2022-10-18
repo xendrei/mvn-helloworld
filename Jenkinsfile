@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                echo "Run"
+                sh "java -jar target/helloworld-app-1.0-SNAPSHOT.jar"
             }
         }
     }
