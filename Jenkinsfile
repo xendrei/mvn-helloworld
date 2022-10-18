@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Info') {
             steps {
-                echo "${env.BUILD_ID}"
+                echo "Build number : ${env.BUILD_ID}"
             }
         }
         stage('Build') {
