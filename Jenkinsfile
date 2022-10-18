@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone') {
+        stage('Info') {
             steps {
-                echo "Don’t need to clone..."
+                echo $BRANCH_NAME
             }
         }
         stage('Build') {
