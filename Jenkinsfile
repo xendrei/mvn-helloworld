@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                sh "rm -rf *"
-                sh "git clone https://github.com/xendrei/mvn-helloworld.git"
+                echo "Don’t need to clone..."
             }
         }
         stage('Build') {
